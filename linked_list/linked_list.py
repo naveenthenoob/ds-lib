@@ -14,7 +14,7 @@ class LinkedList:
       self.head = new_node
     else:
       current = self.head
-      
+    #for finding the last node.  
       while(current.next):
         current = current.next
       current.next = new_node
@@ -30,10 +30,16 @@ class LinkedList:
   def insert(self,value,index):
     current=self.head
     new_node = Node(value)
+
     for i in range(index-1):
-      current = current.next
+      if(current.next):
+        current = current.next
+      else:
+        return("Index is out of range")
     new_node.next = current.next
     current.next = new_node
+    
+  
   
   def delete(self,index):
     current = self.head
@@ -59,12 +65,3 @@ class LinkedList:
         fast = fast.next.next
         slow = slow.next
     return False
-    
-
-
-
-
-
-
-
-
