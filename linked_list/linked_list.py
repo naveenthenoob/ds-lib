@@ -44,12 +44,18 @@ class LinkedList:
   
   def delete(self,index):
     current = self.head
-    for i in range(index-1):
-      if(current.next):
-        current = current.next
+    if(self.head == None):
+      raise Exception ("linkedlist is empty")
+    else:
+      for i in range(index-1):
+        if(current.next):
+          current = current.next
+        else:
+          raise Exception("Index out of range")
+      if(current == self.head):
+        self.head = current.next
       else:
-        raise Exception("Index out of range")
-    current.next = current.next.next
+        current.next = current.next.next if current.next else None
 
   def middle(self):
     fast = self.head
