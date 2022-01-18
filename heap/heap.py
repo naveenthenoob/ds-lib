@@ -8,7 +8,6 @@ class Heap:
 
         while(current > 1):
             parent = current // 2
-            
             # If parent value is less than current then swap current value to parent
             # And shift current to parent
             if(self.heap[parent] < self.heap[current]):
@@ -18,7 +17,6 @@ class Heap:
                 break
         return self.heap
     
-
     def shiftDown(self, arr, start):
         current = start
         last_index = len(arr) - 1
@@ -26,7 +24,6 @@ class Heap:
         while(current < last_index):
             left_child = current * 2
             right_child = left_child + 1
-
             #if zero child is  parsent.
             if(left_child > last_index):
                 break
@@ -55,15 +52,10 @@ class Heap:
         self.heap[current], self.heap[-1] = self.heap[-1], self.heap[current]
         self.heap.pop()
         self.shiftDown(self.heap, 1)
-
         return topValue
     
     def heapify(cls, arr):
         #  Make array 1 indexed
         arr.insert(0,None)
-
         for i in range((len(arr)//2) - 1, 0, -1):
             cls.shiftDown(arr, i)
-
-
-                 
