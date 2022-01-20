@@ -1,4 +1,4 @@
-def Bubblesort(arr):
+def bubble_sort(arr):
     n = len(arr)
     for i in range(len(arr)):
 
@@ -14,5 +14,5 @@ def Bubblesort(arr):
             break
         
 arr =[2, 5, 7, 8, 55, 1, 9]
-Bubblesort(arr)
+bubble_sort(arr)
 print(arr)
