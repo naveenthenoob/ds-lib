@@ -7,7 +7,6 @@ def get_min_index(arr, start):
             min_index = i
     return min_index
 
-
 def selection_sort(arr):
     n = len(arr)
 
@@ -15,6 +14,6 @@ def selection_sort(arr):
         start = i
         min_index = get_min_index(arr, start)
         arr[min_index], arr[start] = arr[start], arr[min_index]
-    return arr
-arr=[1 ,7, 4, 86, 9,3, 2, 0, 6, 88, 44]
-print(selection_sort(arr))
+arr=list(map(int,input().split( )))
+selection_sort(arr)
+print(arr)
