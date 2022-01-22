@@ -14,6 +14,4 @@ def selection_sort(arr):
         start = i
         min_index = get_min_index(arr, start)
         arr[min_index], arr[start] = arr[start], arr[min_index]
-arr=list(map(int,input().split( )))
-selection_sort(arr)
-print(arr)
+    
