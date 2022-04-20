@@ -9,7 +9,7 @@
     -reverse() : reverse the LinkedList
     -isCyclic() : checks whether there is a cycle or not
   example:
-    '''
+      '''
   l1=Linkedlist()
   l1.append(1)
   l1.append('xyz')
