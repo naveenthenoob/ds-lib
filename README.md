@@ -36,6 +36,7 @@
         ### METHODS :
           - BUBBLE SORT
           - INSERTION SORT
+          - SELECTION SORT
     
      
     
