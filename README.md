@@ -9,7 +9,7 @@
     -reverse() : reverse the LinkedList
     -isCyclic() : checks whether there is a cycle or not
   example:
-    ```
+    '''
   l1=Linkedlist()
   l1.append(1)
   l1.append('xyz')
@@ -19,5 +19,22 @@
   l1.middle() // ->xyz
   l1.cyclic() // ->False
   
-  ```
-## STACK
+  '''   
+   
+## STACK  
+   ### methods:
+    - push(value) : pass the value to be inserted in stack
+    - pop() : delete the last element inserted in the stack
+    - peek() : returns the top element
+## HEAP
+   ### methods :
+    - insert(value) : pass the value to be inserted in heap
+    - delete() : delete the head of the heap
+    - heapify(array) : pass the array and it will return the heapified array.
+## SORTING
+   ### METHODS :
+    - BUBBLE SORT
+    - INSERTION SORT
+    
+     
+    
