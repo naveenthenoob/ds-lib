@@ -9,7 +9,7 @@
     -reverse() : reverse the LinkedList
     -isCyclic() : checks whether there is a cycle or not
   example:
-      ```
+      '''
   l1=Linkedlist()
   l1.append(1)
   l1.append('xyz')
@@ -19,8 +19,7 @@
   l1.middle() // ->xyz
   l1.cyclic() // ->False
   
-  ```   
-   
+  '''   
 ## STACK  
    ### methods:
     - push(value) : pass the value to be inserted in stack
