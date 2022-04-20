@@ -32,6 +32,7 @@
     - delete() : delete the head of the heap
     - heapify(array) : pass the array and it will return the heapified array.
 ## SORTING
+    We will pass an array and it will returns the sorted array using Bubble Sort method.
    ### METHODS :
     - BUBBLE SORT
     - INSERTION SORT
