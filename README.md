@@ -1,2 +1,2 @@
 # ds-lib
-A Data structure which consists of multiple common DS and the implementation .
+A Data structure Library which consists of multiple common DS and there implementation .
